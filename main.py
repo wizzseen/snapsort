@@ -68,7 +68,6 @@ count = 0
 
 for image in tqdm(os.listdir(source1[0]), desc="Processing source images"):
     pp = os.path.join(source1[0], image)
-    print("THeeeee perwoooooooooooooooooooooon :",pp)
     output_person_dir = os.path.join(source1[0] + '/output/', str(count))
     os.makedirs(output_person_dir, exist_ok=True)
     shutil.copy(pp, output_person_dir)
